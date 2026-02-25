@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    background-color: #010a02d8;
+    padding: 50px 5%;
+   
+
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgb(11, 2, 34);
+    border: solid 2px rgba(15, 2, 2, 0.712) ;
+    border-radius: 30px;
+    backdrop-filter: calc(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in{
+    100%{
+        transform: scale(1,1);
+    }
+
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 5%;
+    /*background-color: slateblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.animated{
+    transform:translateY(30px) ;
+    opacity: 0;
+    animation: slide-in ease 1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide-in{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo{
+    font-size: 25px;
+    color: #bdc3c5e0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #f1f0ee;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: solid 2px transparent;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    border-color: #fff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #b9aaaa;
+    animation-delay: 1.5s;
+
+}
+
+.home-detail h1 {
+    font-size: 55px;
+    line-height: 1;
+
+}
+
+.home-detail h2{
+    font-size: 32px;
+    
+}
+
+.home-detail p {
+    margin: 10px 0 20px;
+}
+
+.home-detail download-social {
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: solid #fff 2px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    text-shadow: none;
+    color: #fff;
+}
+
+.home-detail social-icons{
+    margin-left: 20px;
+}
+
+.home-detail social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    font-size: 20px ;
+    color: #fff ;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-detail social-icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
+.img-box{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border: solid 2px #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #020f01;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.img-box :hover {
+    transform: scale(1.1);
+}
+
+.img-size{
+    display: block;
+    width: 300px;
+    object-fit: cover;
+    transition: all 1.5s ease
+    
+    
+}
+
+
+.social-container {
+  display: flex;
+  gap: 20px;
+  justify-content: l;
+  align-items: center;
+  padding: 10px;
+  background-color: #02221f00; /* Fond léger pour faire ressortir les icônes */
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200%;
+  background: rgb(195, 197, 195);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #555; /* Couleur grise par défaut */
+  transition: all 0.3s ease;
+}
+
+/* Effets au survol (Hover) */
+
+.social-icon:hover {
+  transform: translateY(-5px); /* Petit saut vers le haut */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Couleurs spécifiques au survol */
+
+/* Facebook */
+.facebook:hover { background-color: #1877F2; }
+.facebook:hover svg { fill: white; }
+
+/* Instagram - Utilise un dégradé Linéaire */
+.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.instagram:hover svg { fill: white; }
+
+/* Whatsapp */
+.whatsapp:hover { background-color: #25D366; }
+.whatsapp:hover svg { fill: white; }
+
+.btn-home {
+  /* Positionnement fixe en bas à droite */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  
+  /* Design du bouton */
+  background: linear-gradient(135deg, #2c4fe9a1, #00D1B2);
+  color: rgb(235, 236, 218);
+  padding: 12px 20px;
+  border-radius: 50px; /* Forme pilule */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  /* Transition pour l'animation */
+  transition: all 0.3s ease;
+  z-index: 1000; /* Toujours au-dessus */
+}
+
+/* --- Animation au survol --- */
+.btn-home:hover {
+  transform: translateY(-5px); /* Le bouton monte légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1); /* Brille un peu plus */
+}
+
+

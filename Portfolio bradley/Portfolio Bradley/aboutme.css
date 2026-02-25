@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    background-color: #070118d8;
+    padding: 50px 5%;
+   
+
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgb(11, 2, 34);
+    border: solid 2px rgba(15, 2, 2, 0.712) ;
+    border-radius: 30px;
+    backdrop-filter: calc(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in{
+    100%{
+        transform: scale(1,1);
+    }
+
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 5%;
+    /*background-color: slateblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.animated{
+    transform:translate(0.1s) ;
+    opacity: 0;
+    animation: slide-in ease 0.1s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide-in{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo{
+    font-size: 25px;
+    color: #bdc3c5e0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #f1f0ee;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: solid 2px transparent;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    border-color: #fff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #b9aaaa;
+    animation-delay: 0.2s;
+
+}
+
+.home-detail h1 {
+    font-size: 55px;
+    line-height: 1;
+
+}
+
+.home-detail h2{
+    font-size: 32px;
+    
+}
+
+.home-detail p {
+    margin: 10px 0 20px;
+}
+
+.home-detail download-social {
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: solid #fff 2px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    text-shadow: none;
+    color: #fff;
+}
+
+.home-detail social-icons{
+    margin-left: 20px;
+}
+
+.home-detail social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    font-size: 20px ;
+    color: #fff ;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.home-detail social-icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
+
