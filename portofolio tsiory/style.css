@@ -1,0 +1,114 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <title>Mon portfolio</title>
+      <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+     <header>
+          <img src="photo.jpg" alt="Ma photo" width="200">
+          <h1>R.Tsioriniaina Fitahina<h1>
+          <h3>Etudiant en Première Année(L1) informatique</h3>
+     </header>
+     
+     <section class="about">
+     <h2> À propos de moi</h2>
+     <p>Je suis étudinte en informtique,apprend actuellement le HTML ,CSS et les bases de l'algorithme.</p>
+     </section>
+     
+     <section class="education">
+     <h2>Formation</h2>
+     <p>Licence 1 en Informatique</p>
+     <p>Université--2025/2026</p>
+     </section>
+     
+     <section class="graduate">
+     <h2>Diplôme</h2>
+           <ul>
+           <li>Baccalauréat</li>
+           <li>BEPC</li>
+           <li>CEPE</li>
+           </ul>
+     </section>
+     
+     <section class="skills">
+     <h2>Compétence</h2>
+           <ul>
+           <li>HTML(debutant)</li>
+           <li>CSS(bases)</li>
+           <li>Algorithme</li>
+           <li>Notion de Python</li>
+           </ul>
+     </section>
+     
+     <section class="language">
+     <h2>Langue</h2>
+           <ul>
+           <li>Malagasy(langue maternelle)</li>
+           <li>Français(International)</li>
+           <li>Anglais(International)</li>
+           </ul>
+     </section>
+     
+     <section class="contact">
+     <h2>Contact</h2>
+           <ul>
+           <li>0383737031</li>
+           <li>ralalafitahiana@gmail.com</li>
+           </ul>
+     </section>
+     
+     <footer>
+         <p>© 2026-Portfolio Étudiant L1</p>
+     </footer>
+</body>
+</html> <style>body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+}
+
+/* Header */
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 8px;
+}
+
+/* Liste compétences */
+ul {
+    padding-left: 20px;
+}
+
+/* Cartes projets */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0f172a;
+    color: white;
+}</style>
